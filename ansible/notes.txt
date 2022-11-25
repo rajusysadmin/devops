@@ -3,8 +3,9 @@ how to write the playbook?
 how to install httpd and git using ansible playbook?
 how to use variables in ansible playbook?
 how to use items in ansible playbook?
+     - if we need to install/uninstall multipule pakeges at a time
 how to use "tags" in ansible playbook?
-
+     - install perticular task we use tags
 
 
 what is ansible vault?

@@ -1,0 +1,19 @@
+---
+- hosts: localhost
+  connection: local
+
+  tasks:
+    - name: install package
+      yum:
+        name: httpd
+        state: present   
+      tags: 
+        - httpd  
+  tasks:
+    - name: install git
+      yum:
+        name: git
+        state: present
+      tags: 
+        - git  
+ 
