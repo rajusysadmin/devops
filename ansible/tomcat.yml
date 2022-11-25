@@ -45,14 +45,19 @@
    - name: Move files to the /opt/tomcat8 directory
      become: yes
      copy:
-        src: /opt/tomcat8/apache-tomcat-8.5.84/
+        src: /opt/tomcat8/apache*/*
         dest: /opt/tomcat8/
         mode: 0755
         owner: tomcat
         group: tomcat
         mode: "u+rwx,g+rx,o=rx"
         recurse: yes
-       
+        
+   - name: Remove apache directory
+     file:
+        path: /opt/tomcat8/apache*/*
+        state: absent
+   
 
    - name: Creating a service file
      become: yes
