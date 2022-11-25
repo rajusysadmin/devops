@@ -39,6 +39,7 @@
        remote_src: yes
        group: tomcat
        owner: tomcat
+       recurse: yes
     
    - name: Move files to the /opt/tomcat8 directory
      become: yes
