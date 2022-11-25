@@ -1,0 +1,16 @@
+what is ansible?
+how to write the playbook?
+how to install httpd and git using ansible playbook?
+how to use variables in ansible playbook?
+how to use items in ansible playbook?
+how to use "tags" in ansible playbook?
+
+
+
+what is ansible vault?
+ansible vault with examples?
+
+
+what is ansible roles?
+ansible role Directory structure?
+how to install httpd using ansible role?

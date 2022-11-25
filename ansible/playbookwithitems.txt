@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  connection: local
+  tasks:
+     - name: install pakages withitems 
+       yum: 
+         name: "{{ items }}" status=absent 
+   	   with_items:
+	      -git
+		  -httpd
+		  -tree
