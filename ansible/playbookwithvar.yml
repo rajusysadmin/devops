@@ -2,7 +2,7 @@
 - hosts: localhost
   connection: local
   vars:
-    - pkg: git,httpd,tree    
+    - pkg: tree    
   tasks:
     - name: install the pakages
       yum:
