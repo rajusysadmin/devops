@@ -7,6 +7,6 @@
   tasks:
     - name: install packages
       yum: 
-       name:{{pkg}} 
+       name: {{pkg}} 
        status: present
         
