@@ -14,7 +14,7 @@
 
     - name: Install JAVA
       yum:
-        name: default-jdk
+        name: java-openjdk11
         state: present
 
 
