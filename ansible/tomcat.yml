@@ -12,11 +12,6 @@
       group:
         name: tomcat
 
-    - name: Install JAVA
-      yum:
-        name: openjdk
-        state: latest
-
 
     - name: Create a Tomcat Directory
       file:
