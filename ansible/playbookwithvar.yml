@@ -7,5 +7,5 @@
     - name: install the pakages
       yum:
         name: "{{ pkg }}"
-        status: present
+        
         
