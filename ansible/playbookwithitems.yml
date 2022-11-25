@@ -4,8 +4,8 @@
   tasks:
      - name: install pakages withitems 
        yum: 
-         name: "{{ items }}" status=absent 
+         name: "{{ items }}" 
    	   with_items:
-	      -git
-		  -httpd
-		  -tree
+	      - git
+		  - httpd
+		  - tree
