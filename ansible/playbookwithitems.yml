@@ -5,8 +5,8 @@
     - name: install packages
       yum:
         name: "{{item}}"
-        state: present
+        state: absent
       with_items:
-        - apache2
-        - ufw
-        - mysql
+        - httpd
+        - tree
+        
