@@ -3,7 +3,7 @@
   hosts: localhost
   connection: local
   vars:
-    download_url: https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.83/bin/apache-tomcat-8.5.83.tar.gz
+    download_url: https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.84/bin/apache-tomcat-8.5.84.tar.gz
   tasks:
    - name: validate if Java is availble 
      shell: 
