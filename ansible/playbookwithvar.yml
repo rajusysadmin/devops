@@ -2,11 +2,10 @@
 - hosts: localhost
   connection: local
   vars:
-    - pkg: git,httpd,tree 
-     
+    - pkg: git,httpd,tree    
   tasks:
     - name: install packages
       yum: 
-       name: "{{ pkg }}" 
-       status: present
+        name: "{{ pkg }}" 
+        status: present
         
