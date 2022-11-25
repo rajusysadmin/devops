@@ -6,6 +6,13 @@ how to use items in ansible playbook?
      - if we need to install/uninstall multipule pakeges at a time
 how to use "tags" in ansible playbook?
      - install perticular task we use tags
+	 - # ansible-playbook playbookwithtags.yml --tags httpd (run with tags like this )
+
+how to check the syntax playbook?
+#ansible-playbook playbookwithtags.yml --syntax-check
+
+how to check the no. of hosts are there in playbook?
+# ansible-playbook playbookwithtags.yml --list-hosts
 
 
 what is ansible vault?
