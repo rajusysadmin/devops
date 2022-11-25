@@ -4,8 +4,8 @@
   vars:
     - pkg: git,httpd,tree    
   tasks:
-    - name: install packages
-      yum: 
-        name: "{{ pkg }}" 
+    - name: install the pakages
+      yum:
+        name: "{{ pkg }}"
         status: present
         
