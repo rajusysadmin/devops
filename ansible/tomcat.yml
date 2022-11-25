@@ -14,7 +14,7 @@
 
     - name: Install JAVA
       yum:
-        name: openjdk-11-jdk
+        name: openjdk
         state: latest
 
 
