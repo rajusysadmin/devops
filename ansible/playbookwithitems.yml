@@ -5,7 +5,7 @@
      - name: install pakages withitems
        yum:
          name: "{{ items }}"
-         status: present
+         status: absent
        with_items:
-          - apache2
-          - ufw
+          - httpd
+          - tree
