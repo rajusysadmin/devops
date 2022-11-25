@@ -1,9 +1,9 @@
 ---
 - hosts: localhost
   connection: local
-  
-  tasks: 
-    -name: install the pakages
-	 yum:
-	   name: {{pkg}}
-       status: present 
+     
+  tasks:
+    - name: install packages
+      yum:
+        name: {{pkg}}
+        state: present   
