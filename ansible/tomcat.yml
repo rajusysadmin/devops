@@ -29,6 +29,7 @@
        mode: 0755
        owner: tomcat
        group: tomcat
+       recurse: yes
 
    - name: Download Tomcat using unarchive
      become: yes
@@ -39,7 +40,7 @@
        remote_src: yes
        group: tomcat
        owner: tomcat
-       recurse: yes
+       
     
    - name: Move files to the /opt/tomcat8 directory
      become: yes
