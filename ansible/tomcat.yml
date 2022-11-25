@@ -45,7 +45,7 @@
    - name: Move files to the /opt/tomcat8 directory
      become: yes
      copy:
-        src: /opt/tomcat8/apache*/*
+        src: /opt/tomcat8/apache-tomcat-8.5.84/
         dest: /opt/tomcat8/
         mode: 0755
         owner: tomcat
@@ -55,7 +55,7 @@
         
    - name: Remove apache directory
      file:
-        path: /opt/tomcat8/apache*/*
+        path: /opt/tomcat8/apache-tomcat-8.5.84/
         state: absent
    
 
