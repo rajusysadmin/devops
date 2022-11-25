@@ -2,9 +2,10 @@
 - hosts: localhost
   connection: local
   tasks:
-     - name: install pakages withitems 
-       yum: 
-         name: "{{items}}"        
-   	   with_items:
+     - name: install pakages withitems
+       yum:
+         name: "{{ items }}"
+         status: present
+       with_items:
           - apache2
           - ufw
