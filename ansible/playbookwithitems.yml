@@ -3,7 +3,7 @@
   connection: local
   tasks:
     - name: install packages
-      apt:
+      yum:
         name: "{{item}}"
         state: present
       with_items:
