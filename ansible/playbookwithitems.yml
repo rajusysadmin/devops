@@ -4,8 +4,7 @@
   tasks:
      - name: install pakages withitems 
        yum: 
-         name: "{{ items }}"
-         state: present         
+         name: "{{ items }}"        
    	   with_items:
           - apache2
           - ufw
