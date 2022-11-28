@@ -1,16 +1,46 @@
 What is maven?
+  - maven is a open source tool it is the build tool and it is generate the .jar and .war files
+     - jar is application based and war is web application based   
+ 
+  -version 3.4
+  -maven is depending on pom.xml
+     -pom.xml -- project object madule
+	          --in pom.xml we are store the plugins and dependencess information  
+    	 
 Types of build tools?
-How to install maven in centos 7?
-How to create the java peoject using maven?
-Build Life cycles?
-  validate
-  compile
-  test
-  pacakge
-  verify
-  install
-  deploy
+  maven  - pom.xml
+  gradle - build.gradle or propertics.gradle
+  ANT  
   
+How to install maven in centos 7?
+    use this blog
+    https://awswithatiq.com/how-to-install-apache-maven-on-amazon-linux-2/ 
+	     or
+	 https://www.tecmint.com/install-apache-maven-on-centos-7/
+How to create the java peoject using maven?
+  #mvn archetype:generate
+  
+
+Build Life cycles?
+  validate   - validate the project 
+  compile    - it is compile the project it will conver the .java files in .class 
+  test
+  package    - it will generate the .jar or .war 
+  verify    - it will verify .jar or .war file is create properlly
+  install   - the .jar or .war file will be store in to .m2 direcory 
+  deploy    - it will store the artifactory in to nexus or different repository 
+  
+  
+  --
+  #mvn clean  -it will clean the target directory
+--
+skip the test case in maven 
+  #mvn install -DskipTests   
+  
+  madules  -
+     A Maven module is a sub-project. To create a Maven module you will need to already have a Maven project available. The parent project must have its Packaging option pre-configured to pom, for a module to be created and associated with it.
+  properties
+    - we are add the version Id in properties and we are call in dependencess 
   
 how to create web project using maven ?
   
