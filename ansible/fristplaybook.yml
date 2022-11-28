@@ -11,6 +11,6 @@
   tasks:
     - name: install git
       yum:
-        name: git
+     name: git
         state: present
  

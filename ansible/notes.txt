@@ -1,4 +1,16 @@
 what is ansible?
+thypes of configuration management tools?
+how to install ansible in centos?
+what is ansible ad-hoc commands?
+     -using with module and argument
+	 -using module
+	 -using argument
+	 
+what is ssh?
+How many ways to setup SSH?
+    -manual
+    -using command ssh-copy-id
+	
 how to write the playbook?
 how to install httpd and git using ansible playbook?
 how to use variables in ansible playbook?
@@ -20,5 +32,74 @@ ansible vault with examples?
 
 
 what is ansible roles?
+
+  -create the ansible role
+   # ansible-galaxy init tomcat --offline
+   
+   
 ansible role Directory structure?
+       ├── defaults   - declear the variables 
+     │   └── main.yml
+     ├── files        - if we copy any files we plce the files here and call from playbook 
+     ├── handlers     -if need to restart or start the service we are add here
+     │   └── main.yml
+     ├── meta         - project infromation like auther and developer
+     │   └── main.yml
+     ├── README.md
+     ├── tasks        - we are place all task here
+     │   └── main.yml
+     ├── templates    - if we have any standed templates we are plce here
+     ├── tests
+     │   ├── inventory
+     │   └── test.yml
+     └── vars          - declear the varables (high priyority variables place here )
+         └── main.yml
+     
+  
 how to install httpd using ansible role?
+
+
+what is ansible vault?
+  - encrypt file ansible files using ansible-vault
+  
+  - create the new file with encrypt
+  #ansible-vault create filename
+  
+  - encrypt the exsting file 
+  # ansible-vault encrypt filename
+  
+  - decrypt the files 
+  #ansible-vault decrypt filename
+  
+  -without decrypt view the files
+  #ansible-vault view filename
+  
+  - without decrypt edit the filename
+  #ansible-vault edit filename
+  
+  - how to change the password 
+  #ansible-vault rekey filename
+  
+  - how to run the encrypted playbook 
+  #ansible-playbook filename.yml --ask-vault-pass
+  
+  - we store the password in one file and run run the playbook
+  #ansible-playbook filename.yml --vault-password-file passwordfilename
+  
+
+ansible vault with examples?
+
+what is ansible roles?
+ansible role directory structure?
+how to install httd using ansible role?
+
+
+Why ansible ? What makes ansible powerful than other tools like chef and puppet?
+modules that you have worked on? Can we create custom module ? 
+What is dynamic inventory in ansible?
+-A dynamic inventory is a script written in Python, PHP, or any other programming language. It comes in handy in cloud environments such as AWS where IP addresses change once a virtual server is stopped and started again
+
+Lets say I have both Ubuntu and centos machines as nodes I want install application tree using same playbook, how would you approach this scenario?
+How to handle prompts with ansible playbook?
+What is ansible galaxy?
+What are adhoc commands?
