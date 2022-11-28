@@ -1,0 +1,33 @@
+---------------------
+add on setting.xml at server detailes
+at maven location /usr/share/apache-maven/conf
+
+<server>
+      <id>nexus-snapshots</id>
+      <username>admin</username>
+      <password>admin123</password>
+    </server>
+    <server>
+      <id>nexus-releases</id>
+      <username>admin</username>
+      <password>admin123</password>
+    </server>
+----------------------	
+	
+	
+
+--------------
+add on pom.xml
+
+<distributionManagement>
+    <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://172.31.10.206:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+    <repository>
+      <id>nexus-releases</id>
+      <url>http://172.31.10.206:8081/repository/maven-releases/</url>
+    </repository>
+  </distributionManagement>	
+
+--------------------------------	
