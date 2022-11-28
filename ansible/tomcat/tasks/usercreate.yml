@@ -1,0 +1,22 @@
+---
+- name: Create the group
+  become: yes
+  group: 
+   name: tomcat
+   state: present
+
+- name: Create the user
+  become: yes
+  user:
+     name: tomcat
+     state: present
+
+- name: Create a Directory /opt/tomcat8
+  become: yes
+  file:
+    path: /opt/tomcat8
+    state: directory
+    mode: 0755
+    owner: tomcat
+    group: tomcat
+    recurse: yes
