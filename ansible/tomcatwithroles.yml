@@ -1,4 +1,6 @@
 ---
-- hosts: localhosts
+- name: Tomcat8
+  hosts: localhost
+  connection: local
   roles:
       - tomcat
