@@ -1,0 +1,16 @@
+What is maven?
+Types of build tools?
+How to install maven in centos 7?
+How to create the java peoject using maven?
+Build Life cycles?
+  validate
+  compile
+  test
+  pacakge
+  verify
+  install
+  deploy
+  
+  
+how to create web project using maven ?
+  
